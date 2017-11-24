@@ -1,31 +1,23 @@
 .d-header{
 	max-width: 100%;
-}
-.header{
-	// border: 1px solid #979797;
-	// background-color: #D8D8D8;
-	//background-image: url(images/i1.jpeg);
-	&__img{
-		width: 100%;
-		height: auto;
-		opacity: 0.9;
-	}
-
-	&__section{
-		background-color: #C5D0D4;
-		&__img{
-			border-radius: 100%;
-		}
-	}
-
-	width: $max-width;
+	.header{
+		border: 1px solid #979797;
+		background-color: #D8D8D8;
+		background-image: url("https://static.pexels.com/photos/655677/pexels-photo-655677.jpeg");
+		height: 600px;
+		display: flex;
+		justify-content: center;
+		align-items: center;	
 	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	left: 50%;
-	transform: translateX(-50%);
-	top: 0;
+		&__section{
+			background-color: #C5D0D4;
+			&__img{
+				border-radius: 100%;
+			}
+		}
+		top: 0;
+	}
+
 }
+
 
