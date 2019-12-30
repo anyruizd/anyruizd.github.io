@@ -1,0 +1,27 @@
+body {
+  background-color: rgba(248, 211, 42, 0.3);
+}
+
+#root {
+  align-items: center;
+  background-color: rgb(226, 149, 25);
+  border-radius: 5%;
+  cursor: pointer;
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin: 30vh auto;
+  transition: transform 0.5s;
+  width: 250px;
+}
+
+#root:hover {
+  transform: scale(1.1);
+}
+
+#root p {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+}
