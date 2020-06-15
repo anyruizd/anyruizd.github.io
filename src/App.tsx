@@ -9,7 +9,7 @@ function App() {
           <span role="img" aria-label="sparkles">✨</span>
           Any's site is under construction
           <span role="img" aria-label="sparkles">✨</span>
-          </p>
+        </p>
       </div>
     </div>
   );
