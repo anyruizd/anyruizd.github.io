@@ -3,12 +3,12 @@ import styled from 'styled-components';
 import { ToggleButton } from '../ToggleButton';
 
 const HeaderStyles = styled.header`
-  width: 100%;
-  height: 60px;
+  align-items: center;
   background-color: transparent;
   display: flex;
+  height: 60px;
   justify-content: flex-end;
-  align-items: center;
+  width: 100%;
 `;
 
 export function Header() {

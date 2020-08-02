@@ -9,8 +9,8 @@ const Toggle = styled.div`
   flex-direction: column;
   height: 28px;
   justify-content: space-around;
-  width: 36px;
   padding-right: 20px;
+  width: 36px;
 
   .line {
     background-color: ${COLORS.darkElement};
