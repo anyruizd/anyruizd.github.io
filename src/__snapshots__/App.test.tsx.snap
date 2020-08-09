@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-AxiKw eGgNkt"
+  >
+    <header
+      class="sc-AxirZ iwGIPQ"
+    >
+      <div
+        class="sc-AxjAm gwyFZa toggle-container menu-closed"
+      >
+        <span
+          class="line line-top"
+        />
+        <span
+          class="line line-mid"
+        />
+        <span
+          class="line line-bottom"
+        />
+      </div>
+    </header>
+  </div>
+</div>
+`;

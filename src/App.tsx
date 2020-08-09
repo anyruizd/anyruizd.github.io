@@ -1,36 +1,21 @@
 import React, { Fragment } from 'react';
-import styled from 'styled-components';
-import { Normalize } from 'styled-normalize';
+import styled, { createGlobalStyle } from 'styled-components';
+import { COLORS } from './constants';
+import { Header } from './components/Header';
+
+const Normalize = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+`;
 
 const AppWrapper = styled.div`
-  background-color: rgba(248, 211, 42, 0.3);
+  background-color: ${COLORS.darkBackground};
   display: flex;
   height: 100vh;
   width: 100vw;
-`;
-
-const AppContent = styled.div`
-  align-items: center;
-  background-color: rgb(226, 149, 25);
-  border-radius: 5%;
-  cursor: pointer;
-  display: flex;
-  height: 250px;
-  justify-content: center;
-  margin: 30vh auto;
-  transition: transform 0.5s;
-  width: 250px;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  & p {
-    color: white;
-    font-family: Helvetica, sans-serif;
-    font-size: 24px;
-    text-align: center;
-  }
 `;
 
 function App() {
@@ -38,17 +23,7 @@ function App() {
     <Fragment>
       <Normalize />
       <AppWrapper>
-        <AppContent>
-          <p>
-            <span role="img" aria-label="sparkles">
-              ✨
-            </span>
-            Any's site is under construction
-            <span role="img" aria-label="sparkles">
-              ✨
-            </span>
-          </p>
-        </AppContent>
+        <Header />
       </AppWrapper>
     </Fragment>
   );
