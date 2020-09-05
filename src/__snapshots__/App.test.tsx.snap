@@ -3,25 +3,96 @@
 exports[`should match snapshot 1`] = `
 <div>
   <div
-    class="sc-AxiKw eGgNkt"
+    class="sc-AxirZ yXksX"
   >
-    <header
-      class="sc-AxirZ cYPKzk"
+    <main
+      class="sc-AxjAm cXCrJf"
     >
       <div
-        class="sc-AxjAm krqhzO toggle-container menu-closed"
+        class="headshot"
       >
-        <span
-          class="line line-top"
-        />
-        <span
-          class="line line-mid"
-        />
-        <span
-          class="line line-bottom"
+        <img
+          alt="Any's headshot"
+          src="anyruizd.jpg"
         />
       </div>
-    </header>
+      <section
+        class="content"
+      >
+        <h5
+          class="title"
+        >
+          Hey there!
+          <span
+            aria-label="wave"
+            role="img"
+          >
+            👋🏽
+          </span>
+        </h5>
+        <p
+          class="subtitle"
+        >
+          I’m Any, a Front-End Developer based in Medellín, Colombia.
+        </p>
+        <div
+          class="social-media"
+        >
+          <li>
+            <a
+              href="https://github.com/anyruizd"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="github logo"
+                class="social-media-logo"
+                src="assets/github-logo-dark.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/anyruizd"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="twitter logo"
+                class="social-media-logo"
+                src="assets/twitter-logo-dark.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/anyruizd"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="linkedin logo"
+                class="social-media-logo"
+                src="assets/linkedin-logo-dark.png"
+              />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://dev.to/anyruizd"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="devto logo"
+                class="social-media-logo"
+                src="assets/devto-logo-dark.png"
+              />
+            </a>
+          </li>
+        </div>
+      </section>
+    </main>
   </div>
 </div>
 `;
