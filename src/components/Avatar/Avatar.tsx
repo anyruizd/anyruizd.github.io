@@ -1,12 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import photoOfAny from '../../assets/images/anyruizd.jpg';
-import { COLORS } from '../../constants';
 
 const AvatarStyles = styled.div`
   border-radius: 50%;
-  border: 4px dotted ${COLORS.Element};
+  border: 4px dotted ${props => props.theme.element};
   width: 240px;
   height: 240px;
   overflow: hidden;

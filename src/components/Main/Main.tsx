@@ -7,7 +7,6 @@ const MainStyles = styled.main`
   align-items: center;
   display: flex;
   flex-direction: column;
-/*   height: 80vh; */
   justify-content: center;
   margin: auto;
 `;
