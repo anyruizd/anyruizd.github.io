@@ -9,6 +9,10 @@ const MainStyles = styled.main`
   flex-direction: column;
   justify-content: center;
   margin: auto;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 `;
 
 export function Main() {

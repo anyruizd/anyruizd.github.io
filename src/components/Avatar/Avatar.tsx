@@ -14,6 +14,11 @@ const AvatarStyles = styled.div`
     object-fit: cover;
     width: 100%;
   }
+
+  @media screen and (min-width: 1024px) {
+    width: 340px;
+    height: 340px;
+  }
 `;
 
 export function Avatar () {

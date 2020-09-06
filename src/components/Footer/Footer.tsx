@@ -12,8 +12,9 @@ const FooterStyles = styled.footer`
   flex-direction: column;
   height: 20vh;
   justify-content: space-evenly;
-  max-height: 100px;
   margin-top: 20px;
+  max-height: 100px;
+  transition: color 0.5;
 
   .social-media {
     display: flex;
@@ -24,14 +25,17 @@ const FooterStyles = styled.footer`
     list-style: none; 
     margin-right: 8px;
 
-    a {
+    .social-link {
+      color: ${({ theme: { fontDark }}) => fontDark};
       display: block;
       height: 30px;
       text-decoration: none;
+      transition: color 0.5;
       width: 30px;
-      color: ${({ theme: { fontDark }}) => fontDark};
 
-      &:hover, 
+      &:hover {
+        color: ${({ theme: { fontColor }}) => fontColor};
+      }
       
       &:visited  {
         color: ${({ theme: { fontDark }}) => fontDark};
@@ -40,11 +44,17 @@ const FooterStyles = styled.footer`
     }
   }
 
-
   .credits {
     color: ${({theme: { fontDark }}) => fontDark};
     font-family: inherit;
     font-size: 0.8rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
   }
 `;
 
@@ -54,7 +64,7 @@ export function Footer () {
     <FooterStyles>
       <div className="social-media">
       <li className="logo">
-        <a
+        <a className="social-link"
           href="https://github.com/anyruizd"
           rel="noopener noreferrer"
           target="_blank"
@@ -63,7 +73,7 @@ export function Footer () {
         </a>
       </li>
       <li className="logo">
-        <a
+        <a className="social-link"
           href="https://linkedin.com/in/anyruizd"
           rel="noopener noreferrer"
           target="_blank"
@@ -72,7 +82,7 @@ export function Footer () {
         </a>
       </li>
     <li className="logo">
-      <a
+      <a className="social-link"
         href="https://dev.to/anyruizd"
         rel="noopener noreferrer"
         target="_blank"
@@ -81,7 +91,7 @@ export function Footer () {
       </a>
     </li>
     <li className="logo">
-        <a
+        <a className="social-link"
           href="https://twitter.com/anyruizd"
           rel="noopener noreferrer"
           target="_blank"

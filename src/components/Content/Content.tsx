@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { SparklesIcon, WaveIcon } from '../Icons'
 
+const positionURL = 'https://www.skillshare.com/';
+
 const ContentStyles = styled.section`
   display: flex;
   flex-direction: column;
@@ -21,13 +23,18 @@ const ContentStyles = styled.section`
   .position {
     font-size: clamp(15px, 1rem + 2vw, 20px);
     font-weight: 300;
-    a {
+
+    &-link {
       color: inherit;
     }
 
-    a:visited {
+    &-link:visited {
       color: inherit;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 60vw;
   }
 `;
 
@@ -42,7 +49,7 @@ export function Content () {
         I'm a Front-End Developer based in Medellin, Colombia.
       </p> 
       <p className="position">
-      <SparklesIcon /> Currently learning awesome stuff as a Software Engineer at <a href="https://www.skillshare.com/" rel="noopener noreferrer" target="_blank">Skillshare</a> <SparklesIcon />
+      <SparklesIcon /> Currently learning awesome stuff as a Software Engineer at <a className="position-link" href={positionURL} rel="noopener noreferrer" target="_blank">Skillshare</a> <SparklesIcon />
       </p> 
     </ContentStyles>
   )
