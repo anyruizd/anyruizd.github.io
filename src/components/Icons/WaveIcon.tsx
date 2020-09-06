@@ -4,8 +4,10 @@ import styled from 'styled-components';
 
 const svgSize = 'clamp(16px, 16px + 2vw, 40px)';
 const WaveIconStyles = styled.svg`
+  max-height: 40px;
   height: ${svgSize};
   margin-left: 10px;
+  max-width: 40px;
   width: ${svgSize};
 `
 

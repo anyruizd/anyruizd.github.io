@@ -4,8 +4,10 @@ import styled from 'styled-components';
 
 const sparklesSize = 'clamp(14px, 1rem, 28px)';
 const SparklesStyles = styled.svg`
-  width: ${sparklesSize};
+  max-height: 28px;
   height: ${sparklesSize};
+  max-width: 28px;
+  width: ${sparklesSize};
 `;
 
 export function SparklesIcon () {
