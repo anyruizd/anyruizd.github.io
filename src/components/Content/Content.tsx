@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { SparklesIcon, WaveIcon } from '../Icons'
+import { BREAKPOINTS } from '../../constants';
 
 const positionURL = 'https://www.skillshare.com/';
 
@@ -33,7 +34,7 @@ const ContentStyles = styled.section`
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${BREAKPOINTS.tablet}) {
     max-width: 60vw;
   }
 `;

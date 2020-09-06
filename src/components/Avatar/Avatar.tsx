@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import photoOfAny from '../../assets/images/anyruizd.jpg';
+import { BREAKPOINTS } from '../../constants';
 
 const AvatarStyles = styled.div`
   border-radius: 50%;
@@ -15,7 +16,7 @@ const AvatarStyles = styled.div`
     width: 100%;
   }
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: ${BREAKPOINTS.laptop}) {
     width: 340px;
     height: 340px;
   }

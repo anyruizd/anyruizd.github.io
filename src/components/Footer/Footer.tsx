@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
+import { BREAKPOINTS } from '../../constants';
+import { HeartIcon } from '../Icons';
 import { ReactComponent as Devto } from './Logos/DevtoLogo.svg';
 import { ReactComponent as GitHub } from './Logos/GitHubLogo.svg';
 import { ReactComponent as LinkedIn } from './Logos/LinkedInLogo.svg';
 import { ReactComponent as Twitter } from './Logos/TwitterLogo.svg';
-import { HeartIcon } from '../Icons';
 
 const FooterStyles = styled.footer`
   align-items: center;
@@ -50,7 +51,7 @@ const FooterStyles = styled.footer`
     font-size: 0.8rem;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: ${BREAKPOINTS.tablet}) {
     flex-direction: row-reverse;
     justify-content: space-between;
     margin-left: 10vw;
