@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.js": "./static/js/main.5195df19.chunk.js",
-    "main.js.map": "./static/js/main.5195df19.chunk.js.map",
+    "main.js": "./static/js/main.84e7366d.chunk.js",
+    "main.js.map": "./static/js/main.84e7366d.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.5d2c4f4a.js",
     "runtime-main.js.map": "./static/js/runtime-main.5d2c4f4a.js.map",
     "static/js/2.5b5c4ff8.chunk.js": "./static/js/2.5b5c4ff8.chunk.js",
     "static/js/2.5b5c4ff8.chunk.js.map": "./static/js/2.5b5c4ff8.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.86152855aedb14e8a284ff037d957026.js": "./precache-manifest.86152855aedb14e8a284ff037d957026.js",
+    "precache-manifest.5395d77973cc26bf5e395b8e369c1589.js": "./precache-manifest.5395d77973cc26bf5e395b8e369c1589.js",
     "service-worker.js": "./service-worker.js",
     "static/js/2.5b5c4ff8.chunk.js.LICENSE.txt": "./static/js/2.5b5c4ff8.chunk.js.LICENSE.txt",
     "static/media/DevtoLogo.bdec03b8.svg": "./static/media/DevtoLogo.bdec03b8.svg",
@@ -19,6 +19,6 @@
   "entrypoints": [
     "static/js/runtime-main.5d2c4f4a.js",
     "static/js/2.5b5c4ff8.chunk.js",
-    "static/js/main.5195df19.chunk.js"
+    "static/js/main.84e7366d.chunk.js"
   ]
 }
