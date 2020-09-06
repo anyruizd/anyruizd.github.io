@@ -47,7 +47,7 @@ export function Content () {
           <WaveIcon />
       </h1>
       <p className="description">
-        I'm a Front-End Developer based in Medellin, Colombia.
+        I'm a Front-End Developer based in Medellín, Colombia.
       </p> 
       <p className="position">
       <SparklesIcon /> Currently learning awesome stuff as a Software Engineer at <a className="position-link" href={positionURL} rel="noopener noreferrer" target="_blank">Skillshare</a> <SparklesIcon />
