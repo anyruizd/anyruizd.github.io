@@ -46,9 +46,18 @@ const FooterStyles = styled.footer`
   }
 
   .credits {
+    align-items: center;
     color: ${({theme: { fontDark }}) => fontDark};
+    display: flex;
     font-family: inherit;
     font-size: 0.8rem;
+  }
+
+  .copy-left {
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1rem;
+    transform: translateY(1px) rotate(180deg) ;
   }
 
   @media screen and (min-width: ${BREAKPOINTS.tablet}) {
@@ -56,6 +65,15 @@ const FooterStyles = styled.footer`
     justify-content: space-between;
     margin-left: 10vw;
     margin-right: 10vw;
+
+    .credits {
+      font-size: 1rem;
+    }
+
+    .copy-left {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+    }
   }
 `;
 
@@ -82,16 +100,16 @@ export function Footer () {
           <LinkedIn />
         </a>
       </li>
-    <li className="logo">
-      <a className="social-link"
-        href="https://dev.to/anyruizd"
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        <Devto />
-      </a>
-    </li>
-    <li className="logo">
+      <li className="logo">
+        <a className="social-link"
+          href="https://dev.to/anyruizd"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <Devto />
+        </a>
+      </li>
+      <li className="logo">
         <a className="social-link"
           href="https://twitter.com/anyruizd"
           rel="noopener noreferrer"
@@ -101,7 +119,7 @@ export function Footer () {
         </a>
       </li>
       </div>
-      <p className="credits">{currentYear.getFullYear()} - Made with <HeartIcon /> by Any Ruiz</p>
+      <pre className="credits"><span className="copy-left"> ©</span>{currentYear.getFullYear()} - Made with <HeartIcon /> by Any Ruiz</pre>
     </FooterStyles>
   )
 }
