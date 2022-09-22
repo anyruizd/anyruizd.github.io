@@ -3,8 +3,6 @@ import styled from 'styled-components';
 import { SparklesIcon, WaveIcon } from '../Icons'
 import { BREAKPOINTS } from '../../constants';
 
-const positionURL = 'https://www.skillshare.com/';
-
 const ContentStyles = styled.section`
   display: flex;
   flex-direction: column;
@@ -47,10 +45,10 @@ export function Content () {
           <WaveIcon />
       </h1>
       <p className="description">
-        I'm a Front-End Developer based in Medellín, Colombia.
+        I'm a latina Frontend Developer based in Montréal, Canada.
       </p> 
       <p className="position">
-      <SparklesIcon /> Currently learning awesome stuff as a Software Engineer at <a className="position-link" href={positionURL} rel="noopener noreferrer" target="_blank">Skillshare</a> <SparklesIcon />
+      <SparklesIcon /> Currently learning awesome stuff at LaSalle College, looking for new and exciting challenges as a part-time Fullstack Developer <SparklesIcon />
       </p> 
     </ContentStyles>
   )

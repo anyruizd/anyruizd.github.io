@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import photoOfAny from '../../assets/anyruizd.jpg';
+import photoOfAny from '../../assets/anyruizd.jpeg';
 import { BREAKPOINTS } from '../../constants';
 
 const AvatarStyles = styled.div`

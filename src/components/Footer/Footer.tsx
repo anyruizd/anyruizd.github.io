@@ -2,10 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { BREAKPOINTS } from '../../constants';
 import { HeartIcon } from '../Icons';
-import { ReactComponent as Devto } from './Logos/DevtoLogo.svg';
 import { ReactComponent as GitHub } from './Logos/GitHubLogo.svg';
 import { ReactComponent as LinkedIn } from './Logos/LinkedInLogo.svg';
-import { ReactComponent as Twitter } from './Logos/TwitterLogo.svg';
 
 const FooterStyles = styled.footer`
   align-items: center;
@@ -98,24 +96,6 @@ export function Footer () {
           target="_blank"
         >
           <LinkedIn />
-        </a>
-      </li>
-      <li className="logo">
-        <a className="social-link"
-          href="https://dev.to/anyruizd"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Devto />
-        </a>
-      </li>
-      <li className="logo">
-        <a className="social-link"
-          href="https://twitter.com/anyruizd"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <Twitter />
         </a>
       </li>
       </div>
