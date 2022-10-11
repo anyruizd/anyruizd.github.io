@@ -36,19 +36,20 @@ const ContentStyles = styled.section`
     max-width: 60vw;
   }
 `;
+const greeting = 'Hey, this is Any!';
+const intro = 'I\'m a latina Frontend Developer based in Montréal, Canada.';
+const description = ' Currently learning awesome stuff at LaSalle College and looking for new and exciting challenges as a Fullstack Developer ';
 
 export function Content () {
   return (
     <ContentStyles className="content">
       <h1 className="title">
-        Hey, I'm Any!
+          {greeting}
           <WaveIcon />
       </h1>
-      <p className="description">
-        I'm a latina Frontend Developer based in Montréal, Canada.
-      </p> 
+      <p className="description">{intro}</p> 
       <p className="position">
-      <SparklesIcon /> Currently learning awesome stuff at LaSalle College, looking for new and exciting challenges as a part-time Fullstack Developer <SparklesIcon />
+      <SparklesIcon />{ description } <SparklesIcon />
       </p> 
     </ContentStyles>
   )
